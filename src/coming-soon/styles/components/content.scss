@@ -1,0 +1,41 @@
+.content {
+  height: calc(100% - $navigation-height);
+  width: 60%;
+  margin: 0 auto;
+
+  @include tablet {
+    width: 100%;
+  }
+
+  & > .about,
+  & > .features,
+  & > .contact {
+    h1 {
+      padding: 32px 0;
+    }
+
+    h3 {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+
+    p {
+      padding-bottom: 16px;
+      letter-spacing: 1px;
+    }
+
+    ul {
+      margin-left: 24px;
+      margin-bottom: 16px;
+
+      & > li {
+        padding-bottom: 8px;
+        letter-spacing: 1px;
+      }
+    }
+
+    a {
+      color: $color-primary;
+    }
+  }
+}

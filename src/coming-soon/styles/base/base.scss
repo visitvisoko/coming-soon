@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.coming-soon {
+  height: 100%;
+}
+
+body {
+  font-family: 'Sofia Sans', sans-serif;
+  background-color: $color-bg;
+  color: $color-font;
+}
+
+.coming-soon {
+  width: 95%;
+  margin: 0 auto;
+}

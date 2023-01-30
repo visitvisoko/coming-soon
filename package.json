@@ -1,0 +1,53 @@
+{
+  "name": "coming-soon",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "@craco/craco": "^7.0.0",
+    "i18next": "^22.4.9",
+    "i18next-http-backend": "^2.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^12.1.4",
+    "react-scripts": "5.0.1",
+    "sass": "^1.57.1",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@edinkahvedzic/prettier-config": "^1.0.0",
+    "@types/node": "^16.18.11",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "cz-conventional-changelog": "^3.3.0",
+    "prettier": "^2.8.3"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "prettier": "@edinkahvedzic/prettier-config",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

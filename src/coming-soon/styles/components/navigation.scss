@@ -1,0 +1,23 @@
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: $navigation-height;
+  padding: 0 32px;
+  column-gap: 32px;
+  border-bottom: 1px solid $color-border;
+
+  @include mobile {
+    padding: unset;
+  }
+
+  & > .navigation-item {
+    transition: color $transition;
+    cursor: pointer;
+
+    &:hover,
+    &.is-opened {
+      color: $color-primary;
+    }
+  }
+}

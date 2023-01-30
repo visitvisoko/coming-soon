@@ -1,0 +1,49 @@
+.how-soon {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 32px;
+
+  .logo {
+    height: 128px;
+    width: 128px;
+
+    & > img {
+      width: 100%;
+    }
+  }
+
+  .heading {
+    font-size: 64px;
+    text-transform: uppercase;
+    color: $color-border;
+    position: relative;
+
+    @include mobile {
+      font-size: 32px;
+    }
+
+    &:before {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 45%;
+      color: $color-primary;
+      overflow: hidden;
+    }
+  }
+
+  .percentage {
+    font-size: 32px;
+    color: $color-primary;
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+}
